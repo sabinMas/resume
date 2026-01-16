@@ -4,13 +4,15 @@
     box-sizing: border-box;
 }
 body {
+    /* tried getting apple style font and webkit */
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     line-height: 1.3;
     background-color: #828497;
     color: #333;
     padding: 32px 16px;
     line-height:1.6;
-    font-variant: small-caps;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 
 } 
 
