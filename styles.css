@@ -15,6 +15,9 @@ body {
     text-rendering: optimizeLegibility;
 
 } 
+h2{
+    font-size: 1.25rem;
+}
 
 ul{
     margin-left: 35px;
@@ -43,17 +46,16 @@ img{
     display:flex;
     align-items:center;
     justify-content: space-between;
-
-
 }
 .name {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
+.role {
+    font-size: 1.25rem;
+}
 .contact{
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
-    color:#fff
+    font-size: 1rem;
 }
 .contact a {
     color: inherit;
