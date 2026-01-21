@@ -1,22 +1,34 @@
+
+:root{
+    --primary:#828497;
+    --accent-hover:rgb(194, 253, 255);
+}
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    /* tried getting apple style font and webkit */
+    /* tried getting Apple style font and webkit found on google*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     line-height: 1.3;
-    background-color: #828497;
+    background-color: var(--primary);
     color: #333;
     padding: 32px 16px;
     line-height:1.6;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
+    letter-spacing: .9px;
 
 } 
+section{
+    margin-bottom: .25rem;
+}
 h2{
     font-size: 1.25rem;
+    margin-bottom: 0.75rem;
 }
 h3{
     font-size:1rem;
@@ -64,7 +76,13 @@ img{
     color: inherit;
 }
 .contact a:hover {
-    color:rgb(194, 253, 255)
+    color: var(--accent-hover);
+}
+a{
+    color: inherit;
+}
+a:hover{
+    color: var(--primary);
 }
 
 /* Parent container holding the three columns */
@@ -80,7 +98,7 @@ img{
   padding: 0 1rem;
 }
 
-/* Optional vertical divider between columns */
+/* vertical divider between columns */
 .t-skills + .t-skills {
   border-left: 1px solid #000;
 }
@@ -95,5 +113,27 @@ img{
 /* Slight spacing under headers */
 .t-skills h4 {
   margin-bottom: 0.5rem;
+}
+
+
+@media (max-width: 600px) {
+ .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+  .skills {
+    flex-direction: column;
+  }
+  
+  .t-skills + .t-skills {
+    border-left: none;
+    border-top: 1px solid #000;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  ul{
+    margin-left: 5px;
+}
 }
 
